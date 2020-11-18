@@ -3,23 +3,25 @@
   <div id="home">
     <home-header>
       <template v-slot:left>
-        <img src="~assets/images/home/back.svg" alt="">
+        <img src="~assets/images/home/back.svg" alt="" />
       </template>
       <template v-slot:middle>
-        <input type="text">
+        <input type="text" />
       </template>
       <template v-slot:right>
         下拉
-        <img src="~assets/images/home/arrow.svg" alt="">
+        <img src="~assets/images/home/arrow.svg" alt="" />
       </template>
     </home-header>
     <home-swiper></home-swiper>
+    <home-icon></home-icon>
   </div>
 </template>
 
 <script>
 import HomeHeader from "views/home/childComponents/Header";
 import HomeSwiper from "views/home/childComponents/Swiper";
+import HomeIcon from "views/home/childComponents/Icon";
 
 export default {
   data() {
@@ -27,7 +29,8 @@ export default {
   },
   components: {
     HomeHeader,
-    HomeSwiper
+    HomeSwiper,
+    HomeIcon,
   },
 };
 </script>
