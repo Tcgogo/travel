@@ -13,11 +13,13 @@
         <img src="~assets/images/home/arrow.svg" alt="">
       </template>
     </home-header>
+    <home-swiper></home-swiper>
   </div>
 </template>
 
 <script>
 import HomeHeader from "views/home/childComponents/Header";
+import HomeSwiper from "views/home/childComponents/Swiper";
 
 export default {
   data() {
@@ -25,6 +27,7 @@ export default {
   },
   components: {
     HomeHeader,
+    HomeSwiper
   },
 };
 </script>

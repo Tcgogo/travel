@@ -22,17 +22,16 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-/* @import url(); 引入css类 */
 
 .header {
   display: flex;
-  height: 46px;
+  height: 3.29rem;
   background-color: rgb(50, 177, 250);
   .left {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 64px;
+    flex: 0 0 4.57rem;
     img {
       max-width: 80%;
       max-height: 60%;
@@ -49,7 +48,6 @@ export default {
       border: none;
       outline: none;
       border-radius: 5px;
-      background: url("~");
     }
   }
   .right {
@@ -57,7 +55,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 60px;
+    flex: 0 0 4.29rem;
     img{
       max-width: 40%;
       transform: rotate(-90deg);
