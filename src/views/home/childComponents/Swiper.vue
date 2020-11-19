@@ -2,7 +2,12 @@
 <template>
   <div class="swiper">
     <swiper ref="mySwiper" :options="swiperOption">
-      <swiper-slide class="swiper-item" v-for="item of swiperList" :key="item.id"><img :src="item.imgurl" alt="" /></swiper-slide>
+      <swiper-slide
+        class="swiper-item"
+        v-for="item of swiperList"
+        :key="item.id"
+        ><img :src="item.imgurl" alt=""
+      /></swiper-slide>
       <div
         class="swiper-pagination swiper-pagination-white"
         slot="pagination"
@@ -18,7 +23,6 @@ export default {
       swiperOption: {
         pagination: {
           el: ".swiper-pagination",
-          clickable: true,
         },
         loop: true,
       },

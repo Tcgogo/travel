@@ -1,10 +1,14 @@
 <!--  -->
 <template>
-  <div class="icon">
-    <div class="icon-item" v-for="item of iconList" :key="item.id">
-      <img :src="item.imgurl" alt="" />
-      <p>{{ item.message }}</p>
-    </div>
+  <div >
+    <swiper>
+      <swiper-slide class="icon" v-for="(items, index) of pages" :key="index">
+        <div class="icon-item" v-for="item of items" :key="item.id">
+          <img :src="item.imgurl" alt="" />
+          <p>{{ item.message }}</p>
+        </div>
+      </swiper-slide>
+    </swiper>
   </div>
 </template>
 
@@ -68,25 +72,58 @@ export default {
             "https://picbed.qunarzz.com/1316dc82d1ce6259686d5a68880e5a9d.png",
           message: "攻略",
         },
+        {
+          id: "012",
+          imgurl:
+            "https://picbed.qunarzz.com/1316dc82d1ce6259686d5a68880e5a9d.png",
+          message: "攻略",
+        },
+        {
+          id: "011",
+          imgurl:
+            "https://picbed.qunarzz.com/1316dc82d1ce6259686d5a68880e5a9d.png",
+          message: "攻略",
+        },
       ],
     };
+  },
+  computed: {
+    pages() {
+      const pages = [];
+      this.iconList.forEach((item, index) => {
+        const page = Math.floor(index / 10);
+        if (!pages[page]) {
+          pages[page] = [];
+        }
+        pages[page].push(item);
+      });
+
+      return pages;
+    },
   },
 };
 </script>
 <style lang="less" scoped>
 /* @import url(); 引入css类 */
 .icon {
-  /deep/ p{
+  /deep/ .swiper-container {
+    width: 100%;
+  }
+  /deep/ p {
     font-size: 12px;
   }
+  margin-top: 3px;
   width: 100vw;
   height: 50vw;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
-  img {
-    max-width: 80%;
+  .icon-item {
+    img {
+        max-width: 80%;
+      }
   }
+  
 }
 </style>
