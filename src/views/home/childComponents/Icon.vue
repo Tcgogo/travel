@@ -112,7 +112,7 @@ export default {
   /deep/ p {
     font-size: .8rem;
   }
-  margin-top: .3rem;
+  background: rgb(255, 255, 255);
   width: 100vw;
   height: 50vw;
   display: grid;
@@ -120,6 +120,7 @@ export default {
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
   .icon-item {
+    margin-top: 0.2rem;
     img {
         max-width: 80%;
       }

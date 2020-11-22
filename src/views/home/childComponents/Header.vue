@@ -26,7 +26,7 @@ export default {
 .header {
   width: 100vw;
   display: flex;
-  height: 3.29rem;
+  height: 3.1rem;
   background-color: rgb(50, 177, 250);
   .left {
     display: flex;
