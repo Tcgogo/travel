@@ -110,9 +110,9 @@ export default {
     width: 100%;
   }
   /deep/ p {
-    font-size: 12px;
+    font-size: .8rem;
   }
-  margin-top: 3px;
+  margin-top: .3rem;
   width: 100vw;
   height: 50vw;
   display: grid;

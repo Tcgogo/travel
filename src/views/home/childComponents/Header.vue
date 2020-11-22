@@ -48,7 +48,7 @@ export default {
       height: 70%;
       border: none;
       outline: none;
-      border-radius: 5px;
+      border-radius: .35rem;
     }
   }
   .right {
