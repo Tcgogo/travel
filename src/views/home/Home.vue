@@ -24,6 +24,9 @@ import HomeHeader from "views/home/childComponents/Header";
 import HomeSwiper from "views/home/childComponents/Swiper";
 import HomeIcon from "views/home/childComponents/Icon";
 import Recommend from "views/home/childComponents/Recommend";
+
+import {getHomeMulidata} from "network/home";
+
 export default {
   data() {
     return {};
@@ -34,6 +37,11 @@ export default {
     HomeIcon,
     Recommend
   },
+  mounted() {
+     getHomeMulidata().then((value,err) => {
+       console.log(value);
+     })
+  }
 };
 </script>
 <style scoped>
