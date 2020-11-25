@@ -74,18 +74,16 @@ export default {
       margin-left: 0.75rem;
       font-size: 0.75rem;
     }
-    .message {
-      display: flex;
-    }
 
     .price {
       color: rgb(245, 118, 15);
-      flex: 1;
-      margin-right: auto;
     }
 
     .site {
       font-size: 0.75rem;
+      position: absolute;
+      right: 0.63rem;
+      margin-top: .2rem;
     }
 
     .decription {

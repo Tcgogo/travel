@@ -64,6 +64,38 @@
         "decription": "浓郁的岭南水乡特色湿地",
         "img": "http://img1.qunarzz.com/sight/p0/1612/bd/bd2a7498820f54aea3.img.jpg_200x200_1a30e79e.jpg"
       }
+    ],
+    "weekend": [
+      {
+        "id": "0001",
+        "title": "深圳周边游",
+        "decription": "远离城市拥堵，去周边开启清新假期吧。",
+        "img": "http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg"
+      },
+      {
+        "id": "0002",
+        "title": "清远周边逛",
+        "decription": "人人都有一双发现美的眼睛，身边的事物最熟悉不过，那你可曾发现了被人遗漏的美？",
+        "img": "http://img1.qunarzz.com/sight/source/1811/15/66f14e0fd6fbb.jpg_r_640x214_5d69f21d.jpg"
+      },
+      {
+        "id": "0003",
+        "title": "浮在海上的绿洲",
+        "decription": "南国滨海之城，避寒胜地，有暖暖的阳光，海风习习，吃着海鲜逛逛老街多惬意啊",
+        "img": "http://img1.qunarzz.com/sight/source/1811/b8/5d599bbdcf8b57.jpg_r_640x214_2ee055e3.jpg"
+      },
+      {
+        "id": "0004",
+        "title": "粤西温泉",
+        "decription": "自驾粤西，这里有最全最心仪的温泉池，环境优美，舒舒服服的泡个热汤，远离繁忙的工作",
+        "img": "http://img1.qunarzz.com/sight/source/1602/9c/39c5ce9ff58609.jpg_r_640x214_efb90102.jpg"
+      },
+      {
+        "id": "0005",
+        "title": "东莞打卡",
+        "decription": "东莞，向往一座城，不需要理由",
+        "img": "http://img1.qunarzz.com/sight/source/1505/4b/d04aa63b1b0ab3.jpg_r_640x214_a3a9c5b6.jpg"
+      }
     ]
   }
 }

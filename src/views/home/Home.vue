@@ -16,6 +16,7 @@
     <home-swiper></home-swiper>
     <home-icon></home-icon>
     <recommend :recommend="recommend"></recommend>
+    <weekend :weekend="weekend"></weekend>
   </div>
 </template>
 
@@ -24,27 +25,31 @@ import HomeHeader from "views/home/childComponents/Header";
 import HomeSwiper from "views/home/childComponents/Swiper";
 import HomeIcon from "views/home/childComponents/Icon";
 import Recommend from "views/home/childComponents/Recommend";
+import Weekend from "views/home/childComponents/Weekend";
 
-import {getHomeMulidata} from "network/home";
+import { getHomeMulidata } from "network/home";
 
 export default {
   data() {
     return {
-      recommend: null
+      recommend: null,
+      weekend: null,
     };
   },
   components: {
     HomeHeader,
     HomeSwiper,
     HomeIcon,
-    Recommend
+    Recommend,
+    Weekend,
   },
   mounted() {
-     getHomeMulidata().then((value) => {
-       this.recommend = value.data.data.recommendList;
-       console.log(this.recommend)
-     })
-  }
+    getHomeMulidata().then((value) => {
+      this.recommend = value.data.data.recommendList;
+      this.weekend = value.data.data.weekend;
+      console.log(this.weekend);
+    });
+  },
 };
 </script>
 <style scoped>
