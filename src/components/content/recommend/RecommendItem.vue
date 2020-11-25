@@ -3,7 +3,7 @@
   <div class="recommend-list">
     <div class="recommend-img">
       <img
-        src="http://img1.qunarzz.com/sight/p0/1507/52/0e7cb0d161c785b41bab3664bf8c692a.water.jpg_200x200_e3f7a99e.jpg"
+        :src="recommend.img"
         alt=""
       />
     </div>

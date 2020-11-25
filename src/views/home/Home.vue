@@ -15,7 +15,7 @@
     </home-header>
     <home-swiper></home-swiper>
     <home-icon></home-icon>
-    <recommend></recommend>
+    <recommend :recommend="recommend"></recommend>
   </div>
 </template>
 
@@ -29,7 +29,9 @@ import {getHomeMulidata} from "network/home";
 
 export default {
   data() {
-    return {};
+    return {
+      recommend: null
+    };
   },
   components: {
     HomeHeader,
@@ -38,8 +40,9 @@ export default {
     Recommend
   },
   mounted() {
-     getHomeMulidata().then((value,err) => {
-       console.log(value);
+     getHomeMulidata().then((value) => {
+       this.recommend = value.data.data.recommendList;
+       console.log(this.recommend)
      })
   }
 };
